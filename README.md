@@ -18,3 +18,8 @@ Technologies Used
  * Frontend: HTML, CSS, JAVASCRIPT
  * Backend: PHP
  * Database: SQL
+
+Requirements
+ * Windows
+ * WAMP
+ * Web browser
