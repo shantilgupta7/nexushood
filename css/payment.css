@@ -1,0 +1,339 @@
+/* payment.css */
+
+/* Container Styles */
+.container9 {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container9:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header with Button */
+.header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container9 h2 {
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #00246b;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+    transition: background 0.2s ease;
+}
+
+.amount {
+    font-weight: 500;
+    color: #27AE60;
+}
+
+tfoot tr {
+    background: #ecf0f1;
+    font-weight: 600;
+}
+
+/* Delete Button and Form Styles */
+.delete-btn {
+    padding: 8px 15px;
+    background: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.delete-btn:hover {
+    background: #C0392B;
+    transform: translateY(-2px);
+}
+
+.delete-range-form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.confirm-delete-btn {
+    padding: 8px 15px;
+    background: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.confirm-delete-btn:hover {
+    background: #C0392B;
+    transform: translateY(-2px);
+}
+
+.cancel-delete-btn {
+    padding: 8px 15px;
+    margin-top: 10px;
+    background: #95A5A6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.cancel-delete-btn:hover {
+    background: #7F8C8D;
+    transform: translateY(-2px);
+}
+
+.success {
+    color: #27AE60;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Accordion Styles */
+.fund-accordion, .form-accordion {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fund-accordion:hover, .form-accordion:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #00246b;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: border-radius 0.3s ease;
+}
+
+.accordion-header h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+
+.accordion-toggle {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.fund-accordion.active .accordion-content,
+.form-accordion.active .accordion-content {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.fund-accordion.active .accordion-header,
+.form-accordion.active .accordion-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.fund-accordion.active .accordion-toggle,
+.form-accordion.active .accordion-toggle {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Society Fund Section */
+.fund-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fund-symbol {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.fund-amount {
+    font-size: 40px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.fund-accordion:hover .fund-amount {
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.form-group label {
+    width: 120px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-group input, .form-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #00246b;
+    box-shadow: 0 0 5px rgba(0, 36, 107, 0.5);
+}
+
+button[type="submit"] {
+    margin-left: 85%;
+    padding: 10px 20px;
+    background: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background: #05578d;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #E74C3C;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container9, .fund-accordion, .form-accordion {
+        padding: 10px;
+    }
+
+    .accordion-header {
+        padding: 15px;
+    }
+
+    .accordion-content {
+        padding: 0 15px;
+    }
+
+    .fund-accordion.active .accordion-content,
+    .form-accordion.active .accordion-content {
+        padding: 15px;
+    }
+
+    .header-with-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        margin-top: 10px;
+    }
+}
+
+ .accordion-content form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .form-group {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 200px;
+    }
+    .accordion-content form button {
+        flex: 1 1 100%;
+        margin-top: 10px;
+    }

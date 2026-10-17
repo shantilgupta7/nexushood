@@ -1,0 +1,351 @@
+/* expense.css */
+
+/* Form Accordion Styles */
+.form-accordion {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-accordion:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #00246b;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: border-radius 0.3s ease;
+}
+
+.accordion-header h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+
+.accordion-toggle {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.form-accordion.active .accordion-content {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.form-accordion.active .accordion-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-accordion.active .accordion-toggle {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Form Styles */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.button-group {
+    flex: 0 0 auto;
+    min-width: 120px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #1e40af;
+    box-shadow: 0 0 5px rgba(30, 64, 175, 0.5);
+}
+
+button[type="submit"], 
+.submit-btn, 
+.confirm-delete-btn, 
+.cancel-delete-btn {
+    padding: 8px 20px;
+    background: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+button[type="submit"]:hover, 
+.submit-btn:hover {
+    background: #03578f;
+    transform: translateY(-2px);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Container Styles for Table */
+.container9 {
+    max-width: 1400px;
+    width: 95%;
+    margin: 10px 20px 20px 35px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container9:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header with Button */
+.header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container9 h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: var(--sidebar);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+tfoot tr {
+    background: #ecf0f1;
+    font-weight: 600;
+}
+
+.amount {
+    font-weight: 500;
+    color: #dc2626;
+}
+
+/* Delete Button and Form Styles */
+.delete-btn {
+    padding: 8px 20px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.delete-range-form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.confirm-delete-btn {
+    background: #dc2626;
+}
+
+.confirm-delete-btn:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.cancel-delete-btn {
+    background: #6b7280;
+}
+
+.cancel-delete-btn:hover {
+    background: #4b5563;
+    transform: translateY(-2px);
+}
+
+.success {
+    color: #16a34a;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Shared Styles */
+.hidden {
+    display: none;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-accordion, .container9 {
+        margin: 15px 20px;
+        padding: 10px;
+    }
+
+    .accordion-header {
+        padding: 15px;
+    }
+
+    .form-accordion.active .accordion-content {
+        padding: 15px;
+    }
+
+    .container9 h2 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .form-group.button-group {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .submit-btn, .confirm-delete-btn, .cancel-delete-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .header-with-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        margin-top: 10px;
+        width: 100%;
+        min-width: 0;
+    }
+}
